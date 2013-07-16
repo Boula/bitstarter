@@ -26,6 +26,8 @@ var program = require('commander');
 var cheerio = require('cheerio');
 var HTMLFILE_DEFAULT = "index.html";
 var CHECKSFILE_DEFAULT = "checks.json";
+var rest = require('restler');
+
 var URL_DEFAULT = "http://shrouded-falls-2667.herokuapp.com/index.html";
 
 var assertFileExists = function(infile) {
